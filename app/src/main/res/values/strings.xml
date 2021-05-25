@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GB-3-01h-JavaToKotlin</string>
+    <string name="main_button">Click Me!</string>
 </resources>
