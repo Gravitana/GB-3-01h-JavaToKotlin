@@ -14,6 +14,27 @@ class MainActivity : AppCompatActivity() {
 
         val mainButton: Button = findViewById(R.id.main_button)
         mainButton.setOnClickListener { mainButtonClick(note) }
+
+        val notesList = MockNotesRepository.getNotesList();
+
+        println()
+
+        for (note in notesList) {
+            println(note.body)
+        }
+
+        println("--- until ---")
+
+        for (i in 0 until notesList.size) {
+            println(notesList[i])
+        }
+
+        println("--- step ---")
+
+        for(i in 12 downTo 1 step 3) {
+            println(i)
+        }
+
     }
 
     private fun mainButtonClick(note: Note) {
